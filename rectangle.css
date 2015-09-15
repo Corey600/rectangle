@@ -1,0 +1,84 @@
+.hide {
+    display: none;
+    visibility: hidden;
+}
+.disable-select {
+    /*½ûÖ¹Ñ¡ÖÐ*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.rect-mouse-cross{
+    cursor: crosshair;
+}
+.rect-mouse-move{
+    cursor: move;
+}
+.rect-container {
+    position: relative;
+}
+.rect-main {
+    position: absolute;
+    background-color: grey;
+    /*Í¸Ã÷*/
+    *zoom:1;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.rect-main.dotted {
+    border: dotted 1px black;
+    cursor: crosshair;
+}
+.rect-main.solid {
+    border: solid 1px black;
+}
+.rect-main.solid .rect-size {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    margin-top: -2px;
+    background-color: black;
+}
+.rect-main.solid .rect-size.left-up {
+    cursor: nw-resize;
+    left: 0;
+    top: 0;
+}
+.rect-main.solid .rect-size.up {
+    cursor: n-resize;
+    left: 50%;
+    top: 0;
+}
+.rect-main.solid .rect-size.right-up {
+    cursor: ne-resize;
+    left: 100%;
+    top: 0;
+}
+.rect-main.solid .rect-size.left {
+    cursor: w-resize;
+    left: 0;
+    top: 50%;
+}
+.rect-main.solid .rect-size.right {
+    cursor: e-resize;
+    left: 100%;
+    top: 50%;
+}
+.rect-main.solid .rect-size.left-down {
+    cursor: sw-resize;
+    left: 0;
+    top: 100%;
+}
+.rect-main.solid .rect-size.down {
+    cursor: s-resize;
+    left: 50%;
+    top: 100%;
+}
+.rect-main.solid .rect-size.right-down {
+    cursor: se-resize;
+    left: 100%;
+    top: 100%;
+}
