@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./rectangle.css" type="text/css">
+    <style type="text/css">
+        #button {
+            width: 110px;
+            padding: 10px;
+            margin: auto;
+        }
+        #image {
+            width: 1000px;
+            height: 625px;
+            margin: auto;
+            background: url('background.jpg');
+        }
+    </style>
+</head>
+<body>
+
+<div id="button"><button id="show">show</button><button id="clear">clear</button></div>
+<div id="image" class="my-center"></div>
+
+<script type="text/JavaScript" src="./jquery-1.9.1.js"></script>
+<script type="text/JavaScript" src="./rectangle.js"></script>
+<script type='text/javascript'>
+    rectangle.setup('image');
+    $('#show').click(function(){
+        console.log(rectangle.getList());
+    });
+    $('#clear').click(function(){
+        rectangle.clear();
+    });
+</script>
+
+</body>
+</html>
