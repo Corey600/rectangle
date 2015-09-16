@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./rectangle.css" type="text/css">
     <style type="text/css">
         #button {
-            width: 110px;
+            width: 150px;
             padding: 10px;
             margin: auto;
         }
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<div id="button"><button id="show">show</button><button id="clear">clear</button></div>
+<div id="button"><button id="show">打印</button><button id="clear">清除</button><button id="modify" value="normal">编辑</button></div>
 <div id="image" class="my-center"></div>
 
 <script type="text/JavaScript" src="./jquery-1.9.1.js"></script>
@@ -32,6 +32,23 @@
     });
     $('#clear').click(function(){
         rectangle.clear();
+    });
+    $('#modify').click(function(e){
+        var $target = $(e.target);
+        switch($target.attr('value')){
+            case 'modify':
+                $target.text('编辑');
+                $target.attr('value', 'normal');
+                rectangle.changeMode('normal');
+                break;
+            case 'normal':
+                $target.text('返回');
+                $target.attr('value', 'modify');
+                rectangle.changeMode('modify');
+                break;
+            default :
+                break;
+        }
     });
 </script>
 
