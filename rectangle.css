@@ -19,13 +19,9 @@
 }
 .rect-main {
     position: absolute;
-    background-color: grey;
-    /*Í¸Ã÷*/
-    *zoom:1;
+    background-color: rgba(128, 128, 128, 0.5);
     filter:alpha(opacity=50);
-    -moz-opacity:0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
+    *zoom:1;
 }
 .rect-main.dotted {
     border: dotted 1px black;
@@ -33,6 +29,16 @@
 }
 .rect-main.solid {
     border: solid 1px black;
+}
+.rect-main.solid .rect-delete {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    width: 16px;
+    height: 16px;
+    background: url('close.png') no-repeat center;
 }
 .rect-main.solid .rect-size {
     position: absolute;
