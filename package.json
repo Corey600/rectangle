@@ -1,0 +1,22 @@
+{
+  "name": "rectangle",
+  "version": "1.0.0",
+  "description": "to draw rectangular marquee on a picture.",
+  "main": "rectangle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Corey600/rectangle.git"
+  },
+  "keywords": [
+    "draw"
+  ],
+  "author": "Corey600",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Corey600/rectangle/issues"
+  },
+  "homepage": "https://github.com/Corey600/rectangle#readme"
+}
